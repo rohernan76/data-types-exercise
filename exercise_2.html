@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		* Exercise Two
+		* Why does the following output true?
+		*/
+
+		var a = "false";
+		var b = true;
+
+		// "&&" is "and"
+		console.log (b && a);
+
+		/* Answer: The AND operator (&&) returns true if both expressions are true, otherwise it returns false. Since "false" is a string then it qualifies as true (if it had been an empty string then it would be considered falsy) and since b is also true then the output equals true.*/
+				/*
+
+		* Bonus Question: Why does (b && a) log "false"?
+		
+		Answer: Short-circuiting, apersands (boolean) will return the first falsy value or the last value
+		EXAMPLE: (1 && 2 && 0 && 4) would return 0 due to short circuiting
+		EXAMPLE: (1 && "" && 0 && 4) would return 
+		
+		ADDITIONAL NOTES:
+		If it's OR is works in the opposite direction: It returns the first truthy value or the last value
+		EXAMPLE: (1 || "" || 0 || 4) would return 1
+
+		EXAMPLE: var a = prompt("What?");
+				 var b = a || "default";
+
+		ANSWER: If nothing was inputted in the prompt then a would be considered falsy thus the only truthy in var b is the string "default". 
+
+			*/
+
+	</script>
+</body>
+</html>
